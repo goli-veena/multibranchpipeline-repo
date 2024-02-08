@@ -9,7 +9,7 @@ if(env.BRANCH_NAME == 'dev'){
        sh 'docker build -it . --name 7674043534/devrepo'
        }
      }
-else(env.BRANCH_NAME == 'master'){
+else(env.BRANCH_NAME == 'main'){
      stage("build"){
         // Building job
        sh 'npm install'
