@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    app: my-app
+spec:
+  containers:
+  - name: my-container-1
+    image: 7674043534/devrepo:latest
+    ports:
+    - containerPort: 80
